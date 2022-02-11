@@ -1,7 +1,23 @@
 
 //ADD YOUR FIREBASE LINKS HERE
-/*
+
+
 const firebaseConfig = {
+  apiKey: "AIzaSyDW69wKrmOdeLWW-UsC78l6Km1m5P1pPPc",
+  authDomain: "kwitter-project-cc488.firebaseapp.com",
+  projectId: "kwitter-project-cc488",
+  databaseURL: "https://kwitter-project-cc488-default-rtdb.firebaseio.com",
+  storageBucket: "kwitter-project-cc488.appspot.com",
+  messagingSenderId: "938473941852",
+  appId: "1:938473941852:web:eac25813e27eece7322f99",
+  measurementId: "G-RZDF8M7K98"
+};
+
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+//const analytics = getAnalytics(app);
+
+/*const firebaseConfig = {
       apiKey: "AIzaSyAh4orVrgRmOG2JJkU3DqvvukDpVlnBsgY",
       authDomain: "test-80721.firebaseapp.com",
       databaseURL: "https://test-80721-default-rtdb.firebaseio.com",
@@ -14,7 +30,7 @@ const firebaseConfig = {
     
     // Initialize Firebase
     const app = firebase.initializeApp(firebaseConfig);
-
+*/
     user_name = localStorage.getItem("user_name");
 
 document.getElementById("user_name").innerHTML = "Welcome " + user_name + "!";
@@ -52,9 +68,10 @@ function redirectToRoomName(name)
     window.location = "kwitter_page.html";
 }
 
+
 function logout()
 {
   localStorage.removeItem("user_name");
   localStorage.removeItem("room_name");
-  window.location = "kwitter.html";
-}*/
+  window.location = "index.html";
+}
