@@ -66,7 +66,7 @@ document.getElementById("output").innerHTML += row;
       } });  }); }
 getData();
 
-/*function updateLike(message_id)
+function updateLike(message_id)
 {
       console.log("clicked on like button - " +message_id);
       button_id = message_id;
@@ -78,7 +78,7 @@ getData();
             like : updated_likes 
       });
 
-}*/
+}
 
 function logout()
 {
